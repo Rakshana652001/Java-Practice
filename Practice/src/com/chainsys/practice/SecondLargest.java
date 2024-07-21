@@ -31,5 +31,4 @@ public class SecondLargest {
 		System.out.println(arr[index]);
 		scan.close();
 	}
-
 }
