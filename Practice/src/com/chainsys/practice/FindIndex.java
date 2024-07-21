@@ -22,7 +22,7 @@ public class FindIndex
 		System.out.println("Enter a number to find Index: ");
 		int index = scan.nextInt();
 		
-		findIndex(array,index).ifPresentOrElse(yes -> System.out.println("Position: "+yes), () -> System.out.println("Does not contain: "));
+		findIndex(array,index).ifPresentOrElse(yes -> System.out.println("Position: "+yes), () -> System.out.println("Does not contain"));
 		
 		
 		scan.close();

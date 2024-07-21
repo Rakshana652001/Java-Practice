@@ -30,10 +30,6 @@ public class FindTheNumber
 	 {
 		 System.out.println("Array contains"); 
 	 }
-	 
-	 
-		
-		
 		scan.close();
 	}
 
