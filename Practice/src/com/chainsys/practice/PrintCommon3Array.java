@@ -33,7 +33,7 @@ public class PrintCommon3Array {
 			arr3[i] = scan.nextInt();
 		}
 		
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		int one=0, two=0, three=0;
 		while(one<num1 && two<num2 && three<num3)
 		{
