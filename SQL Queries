@@ -1,0 +1,68 @@
+create schema practice;
+use practice;
+
+create table details
+(
+	id int,
+	firstName varchar(20),
+    lastName varchar(20)
+);
+
+insert into details (id, firstName, lastName) values (104, 'Steve', 'Rogers');
+
+select * from details;
+
+create table address
+(
+	id int,
+    city varchar(20),
+    state varchar(20)
+);
+
+insert into address (id, city, state) values (103, 'E', 'F');
+select * from address;
+
+select firstName, lastName, city,state from details left join address on details.id = address.id;
+
+
+create table sales
+(
+	sale_id int,
+    employee_id int,
+    sale_date date,
+    sale_amout long
+);
+
+insert into sales (sale_id, employee_id, sale_date, sale_amout) value (103, 203, '2023-02-17', 2500);
+
+select * from sales;
+
+select distinct sale_amout as secondSale from sales order by sale_amout desc limit 1 offset N;
+
+
+create table countries 
+(
+	country_id int unique auto_increment not null,
+    country_name varchar(30) not null,
+    region_id decimal not null
+);
+
+insert into countries (country_name,region_id) values ('UK', 104);
+
+update countries set country_name = 'United Kingdom' where region_id=104;
+
+update countries set region_id=105 where country_name='United Kingdom'; 
+
+alter table countries add column counry_capital varchar(20);
+
+alter table countries change counry_capital country_capital varchar(20);
+
+alter table countries add unique (country_capital);
+
+select country_name from countries where country_id = 1;
+
+select * from countries order by country_name desc;
+
+update countries set country_capital='Jayawardenepura' where region_id=102;
+
+select * from countries;
