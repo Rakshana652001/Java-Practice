@@ -40,11 +40,7 @@ public class AddtionPairPrint {
 		else
 		{
 			System.out.println("No such pairs");
-		}
-		
+		}		
 		scan.close();
-		// TODO Auto-generated method stub
-
 	}
-
 }
