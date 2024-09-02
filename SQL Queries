@@ -65,4 +65,7 @@ select * from countries order by country_name desc;
 
 update countries set country_capital='Jayawardenepura' where region_id=102;
 
+select * from countries where region_id between 100 and 103;
+
+select * from countries where region_id between 100 and 200 
 select * from countries;
